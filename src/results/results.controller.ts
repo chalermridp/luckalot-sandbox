@@ -1,4 +1,12 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Post } from '@nestjs/common';
+import { ResultsService } from './results.service';
 
 @Controller('results')
-export class ResultsController {}
+export class ResultsController {
+  constructor(private resultsService: ResultsService) {}
+
+  @Post('/import-from-beginning')
+  importFromBeginning() {
+    return this.resultsService.importFromBeginning();
+  }
+}
