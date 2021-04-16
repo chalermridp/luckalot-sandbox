@@ -11,13 +11,13 @@ export class ResultsService {
 
   async importFromBeginning() {
     // const beginDate = new Date('2006-12-30');
-    const beginDate = new Date('2017-05-17');
+    const beginDate = new Date('2021-03-01');
     // const beginDate = new Date('2021-01-17');
     // const endDate = new Date('2007-02-01');
     // const beginDate = new Date('2007-10-16'); //*** */
 
     // const beginDate = new Date('2008-08-16');
-    const endDate = new Date('2021-01-17');
+    const endDate = new Date('2021-04-16');
     // const eligibleDates = [29, 30, 31, 1, 2, 15, 16, 17];
     while (beginDate <= endDate) {
       // if (eligibleDates.indexOf(beginDate.getDate())) {
